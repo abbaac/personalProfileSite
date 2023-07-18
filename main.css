@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: #ededed;
+
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+}
+
+.logo{
+    font-size: 25px;
+    color: gold;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: gold; 
+}
+
+.home {
+    height: 100vh;
+    background: url('surfaceOwl.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: gold;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    background: none;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: gold;
+    border: 2px solid gold;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: .5s;
+    
+}
+
+.btn-box a:nth-child(2) {
+    color: gold;
+    background: transparent;
+}
+
+.btn-box a:hover {
+    color:  gold;
+    background: transparent;
+   
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+    background: gold;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid gold;
+    border-radius: 50%;
+    font-size: 20px;
+    color:gold;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: gold;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: #081b29;
+}
+.home-sci a:hover::before {
+    width: 100%;    
+}
